@@ -12,5 +12,3 @@ Cargo.lock
 **/*.rs.bk
 
 # Datafiles
-*.csv
-*.json

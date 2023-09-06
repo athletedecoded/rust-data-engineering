@@ -1,5 +1,7 @@
 # Rust Data Engineering
 
+[![Rust CI/CD Pipeline](https://github.com/nogibjj/athletedecoded_data_engineering/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/athletedecoded_data_engineering/actions/workflows/CICD.yml)
+
 Project Portfolio for IDS706 Fall 2023 at Duke University by [@athletedecoded](https://github.com/athletedecoded)
 
 ## Individual Projects

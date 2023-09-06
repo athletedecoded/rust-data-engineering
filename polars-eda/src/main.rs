@@ -41,7 +41,7 @@ fn main() {
         },
         Some(Commands::Json { path }) => {
             println!("Loading JSON to dataframe...");
-            polars_eda::load_json(&path)
+            polars_eda::read_json(&path)
         }
         None => {
             println!("No command specified");
