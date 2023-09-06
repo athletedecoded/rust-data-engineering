@@ -15,3 +15,11 @@ pub fn read_csv(path: &str, header: bool) -> Result<DataFrame, PolarsError> {
 //     let df = JsonReader::from_path(path).unwrap().finish().unwrap();
 //     Ok(df)
 // }
+
+//summarise dataframe
+pub fn df_summary(df: DataFrame) {
+    println!("Dataframe Summary...");
+    println!("{:?}", df.head(Some(5)));
+    println!("{:?}", df.schema());
+    println!("{:?}", df.describe(None));
+}

@@ -4,7 +4,6 @@ A Polars CLI tool that uses clap to parse the following optional arguments:
 */
 
 use clap::Parser;
-use polars::prelude::*;
 
 #[derive(Parser)]
 //add extended help
@@ -12,7 +11,7 @@ use polars::prelude::*;
     version = "1.0",
     author = "Kahlia Hogg",
     about = "A CLI tool for EDA using Polars",
-    after_help = "Example: cargo run csv --path <path/to/data.csv>"
+    after_help = "Example: cargo run csv --path <path/to/data.csv> --has_headers"
 )]
 struct Cli {
     #[clap(subcommand)]
@@ -25,7 +24,7 @@ enum Commands {
         #[clap(long)]
         path: String,
         #[clap(long)]
-        header: bool
+        has_headers: bool
     },
     // Json {
     //     #[clap(long)]
@@ -37,10 +36,13 @@ enum Commands {
 fn main() {
     let args = Cli::parse();
     match args.command {
-        Some(Commands::Csv { path, header }) => {
+        Some(Commands::Csv { path, has_headers }) => {
             println!("Loading CSV to dataframe...");
-            let df = polars_eda::read_csv(&path, header);
-            println!("{:?}", df);
+            let df = polars_eda::read_csv(&path, has_headers);
+            match df {
+                Ok(df) => polars_eda::df_summary(df),
+                Err(e) => println!("Error: {:?}", e)
+            }
         },
         // Some(Commands::Json { path }) => {
         //     println!("Loading JSON to dataframe...");
