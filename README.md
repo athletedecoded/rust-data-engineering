@@ -21,4 +21,4 @@ Project Portfolio for IDS706 Fall 2023 at Duke University by [@athletedecoded](h
 |:---:  |:-------------:                      |:----:                                 |
 | 1    | [Distroless CI/CD Project Template](https://github.com/athletedecoded/rust-distro-cicd)   | Designing for CI/CD good practice |
 | 2    | [Polars EDA](./polars-eda)   | EDA with polars |
-| 3    | [Rust x Jupyter](./rust-jupyter)   | evcxr_jupyter for notebooks |
+| 3    | [Rust x Jupyter](./rust-jupyter)   | evcxr-jupyter for notebooks |
