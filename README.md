@@ -6,7 +6,7 @@ Project Portfolio for IDS706 Fall 2023 at Duke University by [@athletedecoded](h
 
 ## Individual Projects
 
-**Project 1:** 
+**Project 1:** [Rust EDA with Polars and EvCxR Jupyter](https://github.com/athletedecoded/rusty-ds)
 
 **Project 2:** 
 
