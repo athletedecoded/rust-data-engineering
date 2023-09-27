@@ -1,6 +1,6 @@
 # Rust Data Engineering
 
-[![Rust CI/CD Pipeline](https://github.com/nogibjj/athletedecoded_data_engineering/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/athletedecoded_data_engineering/actions/workflows/CICD.yml)
+[![Rust CI/CD Pipeline](https://github.com/athletedecoded/rust-data-engineering/actions/workflows/CICD.yml/badge.svg)](https://github.com/athletedecoded/rust-data-engineering/actions/workflows/CICD.yml)
 
 Project Portfolio for IDS706 Fall 2023 at Duke University by [@athletedecoded](https://github.com/athletedecoded)
 
@@ -22,3 +22,4 @@ Project Portfolio for IDS706 Fall 2023 at Duke University by [@athletedecoded](h
 | 1    | [Distroless CI/CD Project Template](https://github.com/athletedecoded/rust-distro-cicd)   | Designing for CI/CD good practice |
 | 2    | [Polars EDA](./polars-eda)   | EDA with polars |
 | 3    | [Rust x Jupyter](./rust-jupyter)   | evcxr-jupyter for notebooks |
+| 5    | [Rust x SQLite](./rust-sql)   | sqlite3 and rusqlite |
