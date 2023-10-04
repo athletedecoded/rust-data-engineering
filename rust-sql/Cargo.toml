@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 clap = {version="4.0.32", features=["derive"]}
 rusqlite = "0.29.0"
+assert_cmd = "2.0.0"
